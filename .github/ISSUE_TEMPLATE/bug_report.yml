@@ -1,0 +1,54 @@
+name: Bug report
+description: Something in ads1299-mmb0 does not work as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do **not** attach TI firmware binaries or PDK archives.
+  - type: textarea
+    id: describe
+    attributes:
+      label: What happened?
+      description: Expected vs actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. …
+        2. …
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      placeholder: macOS 15 / Ubuntu 24.04 / Windows 11
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+      placeholder: "3.12.x"
+    validations:
+      required: true
+  - type: dropdown
+    id: usb
+    attributes:
+      label: USB state when the issue occurs
+      options:
+        - Bootloader 0451:9001
+        - USBStyx 0451:5718
+        - Neither / unknown
+        - Not applicable (no hardware)
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / traceback
+      render: shell

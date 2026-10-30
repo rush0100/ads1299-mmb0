@@ -1,17 +1,43 @@
+# Byte-compiled / cache
 __pycache__/
 *.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Packaging
 *.egg-info/
 .eggs/
 dist/
 build/
+*.egg
+pip-wheel-metadata/
+
+# Virtualenvs
 .venv/
 venv/
-.pytest_cache/
-.mypy_cache/
-.DS_Store
-._*
-*.bin
-ads1299evm-pdk.bin
-.env
+ENV/
+
+# Editors / OS
 .idea/
 .vscode/
+*.swp
+.DS_Store
+Thumbs.db
+._*
+
+# Local secrets / TI proprietary (never commit)
+.env
+.env.*
+*.bin
+ads1299evm-pdk.bin
+vendor/
+_extract/
+*.exe

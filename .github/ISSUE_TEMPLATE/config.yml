@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Texas Instruments support
+    url: https://www.ti.com/support-quality/support.html
+    about: Questions about TI PDK, firmware licensing, or hardware warranties belong with TI.

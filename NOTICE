@@ -1,0 +1,12 @@
+ads1299-mmb0
+Copyright (c) 2026 rush0100
+
+This project is an independent open-source Python host for the Texas Instruments
+ADS1299EEG-FE evaluation hardware on the MMB0 motherboard. It is not affiliated
+with, endorsed by, or sponsored by Texas Instruments Incorporated.
+
+ADS1299, MMB0, and related names are trademarks of Texas Instruments.
+Firmware images (including ads1299evm-pdk.bin), PDK installers, LabVIEW
+applications, and TI source packages remain the property of their respective
+owners and are not distributed by this repository. Obtain them only under TI’s
+applicable terms.

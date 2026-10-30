@@ -9,8 +9,24 @@ description = "Python client for TI ADS1299EEG-FE on MMB0 (USBStyx / 9P)"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
-authors = [{ name = "rush0100" }]
-keywords = ["ads1299", "eeg", "mmb0", "usb", "styx", "ti"]
+authors = [{ name = "rush0100", email = "rush0100@users.noreply.github.com" }]
+keywords = ["ads1299", "eeg", "mmb0", "usb", "styx", "biosignal", "ti"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering",
+  "Topic :: System :: Hardware",
+  "Typing :: Typed",
+]
 dependencies = [
   "pyusb>=1.2.1",
   "numpy>=1.24",
@@ -18,8 +34,10 @@ dependencies = [
 
 [project.urls]
 Homepage = "https://github.com/rush0100/ads1299-mmb0"
+Documentation = "https://github.com/rush0100/ads1299-mmb0#readme"
 Repository = "https://github.com/rush0100/ads1299-mmb0"
 Issues = "https://github.com/rush0100/ads1299-mmb0/issues"
+Changelog = "https://github.com/rush0100/ads1299-mmb0/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]
 dev = ["pytest>=7"]
@@ -34,3 +52,8 @@ ads1299-gui = "ads1299_mmb0.gui.app:main"
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["ads1299_mmb0*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["ignore::DeprecationWarning"]

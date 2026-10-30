@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: ads1299-mmb0
+message: If you use this software, please cite it using these metadata.
+type: software
+authors:
+  - name: rush0100
+repository-code: "https://github.com/rush0100/ads1299-mmb0"
+url: "https://github.com/rush0100/ads1299-mmb0"
+abstract: >-
+  Python host client for the TI ADS1299EEG-FE on MMB0 over USBStyx (9P).
+  TI firmware is not included and must be obtained separately.
+license: MIT
+version: 0.1.0
+date-released: "2026-10-30"
+keywords:
+  - ads1299
+  - eeg
+  - mmb0
+  - usb
+  - styx
