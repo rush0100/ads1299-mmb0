@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+._*
+*.bin
+ads1299evm-pdk.bin
+.env
+.idea/
+.vscode/

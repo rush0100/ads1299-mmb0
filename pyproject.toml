@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ads1299-mmb0"
+version = "0.1.0"
+description = "Python client for TI ADS1299EEG-FE on MMB0 (USBStyx / 9P)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "rush0100" }]
+keywords = ["ads1299", "eeg", "mmb0", "usb", "styx", "ti"]
+dependencies = [
+  "pyusb>=1.2.1",
+  "numpy>=1.24",
+]
+
+[project.urls]
+Homepage = "https://github.com/rush0100/ads1299-mmb0"
+Repository = "https://github.com/rush0100/ads1299-mmb0"
+Issues = "https://github.com/rush0100/ads1299-mmb0/issues"
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+gui = ["matplotlib>=3.8"]
+
+[project.scripts]
+ads1299-load = "ads1299_mmb0.cli:load_main"
+ads1299-shell = "ads1299_mmb0.cli:shell_main"
+ads1299-capture = "ads1299_mmb0.cli:capture_main"
+ads1299-gui = "ads1299_mmb0.gui.app:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ads1299_mmb0*"]
