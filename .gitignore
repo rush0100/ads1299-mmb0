@@ -41,3 +41,9 @@ ads1299evm-pdk.bin
 vendor/
 _extract/
 *.exe
+
+# Local media (may include TI doc captures — keep out of public tree)
+docs/schematic_captures/
+docs/gui_screenshots/
+docs/gui_html/
+scripts/capture_gui_screenshots.py
