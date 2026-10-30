@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<title>ADS1299EEG-FE — About</title>
+<link rel="stylesheet" href="style.css"/>
+</head><body>
+<div class="window">
+  <div class="titlebar"><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+    ADS1299EEG-FE — Python EVM (SLAU443B parity)</div>
+  <div class="top">
+    <div class="brand">ADS1299EEG-FE</div>
+    <div class="sub">MMB0 / USBStyx</div>
+    <span class="badge">doc render · mirrors live ads1299-gui</span>
+    <div class="spacer"></div>
+    <span class="btn">Show/Poll Lead-Off</span>
+    <span class="btn">Read Registers</span>
+    <span class="btn">Disconnect</span>
+    <span class="btn">Connect</span>
+  </div>
+  <div class="progress"><span></span></div>
+  <div class="tabs"><span class="on">About</span><span class="">ADC Registers</span><span class="">Analysis</span><span class="">Save</span><span class="">MMB0</span></div>
+  <div class="content">
+        <h1>EEG Front-End Performance Demonstration Kit</h1>
+        <p>Python EVM client — functional parity with SLAU443B LabVIEW software
+        (registers, lead-off poll, scope/FFT/histogram/analysis, impedance presets, save).</p>
+        <p>Block capture only (MMB0 buffer-then-USB). Eval/lab use — not for diagnosis.</p>
+        <p>Impedance presets need matching jumpers (JP25/J6) per User Guide.</p>
+        <p><b>Device:</b> (not connected)</p>
+        <p class="muted">USB IDs: boot 0x0451:0x9001 → styx 0x0451:0x5718</p>
+        <div class="note">Launch with <code>ads1299-gui</code>. Connect loads firmware if the board is in bootloader mode.</div>
+        </div>
+  <div class="status">Disconnected — USB idle</div>
+</div>
+</body></html>

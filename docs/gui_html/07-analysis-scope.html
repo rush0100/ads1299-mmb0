@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<title>ADS1299EEG-FE — Analysis / Scope</title>
+<link rel="stylesheet" href="style.css"/>
+</head><body>
+<div class="window">
+  <div class="titlebar"><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+    ADS1299EEG-FE — Python EVM (SLAU443B parity)</div>
+  <div class="top">
+    <div class="brand">ADS1299EEG-FE</div>
+    <div class="sub">MMB0 / USBStyx</div>
+    <span class="badge">doc render · mirrors live ads1299-gui</span>
+    <div class="spacer"></div>
+    <span class="btn">Show/Poll Lead-Off</span>
+    <span class="btn">Read Registers</span>
+    <span class="btn">Disconnect</span>
+    <span class="btn">Connect</span>
+  </div>
+  <div class="progress"><span></span></div>
+  <div class="tabs"><span class="">About</span><span class="">ADC Registers</span><span class="on">Analysis</span><span class="">Save</span><span class="">MMB0</span></div>
+  <div class="content">
+        <div class="grid cols-2">
+          <div>
+            <h2>Capture</h2>
+            <div>Frames <span class="field">1024</span></div>
+            <div>Vref <span class="field">4.5</span></div>
+            <div>Gain <span class="field">24</span></div>
+            <div class="row"><span class="btn">Acquire</span></div>
+            <div class="panel">
+              <b>Continuous (segmented)</b>
+              <div>Chunk frames <span class="field">256</span></div>
+              <div>Duration s <span class="field">0</span></div>
+              <div class="row"><span class="btn">Start</span><span class="btn">Stop</span></div>
+              <div class="small">Idle (not zero-gap USB)</div>
+            </div>
+            <h2>Presets</h2>
+            <div class="btn" style="display:block;margin:3px 0">Input short noise</div>
+            <div class="btn" style="display:block;margin:3px 0">Internal test signal</div>
+            <div class="btn" style="display:block;margin:3px 0">Impedance @ 31.2 Hz</div>
+            <div class="btn" style="display:block;margin:3px 0">Impedance @ fDR/4</div>
+            <div class="small">Channels CH1…CH8 · Scope zoom · Redraw</div>
+          </div>
+          <div>
+            <div class="subtabs"><span class="on">Scope</span><span>FFT</span><span>Histogram</span><span>Analysis</span></div>
+            <img class="plot" src="../gui_screenshots/plot-scope-demo.png" alt="scope"/>
+          </div>
+        </div>
+        </div>
+  <div class="status">Disconnected — USB idle</div>
+</div>
+</body></html>

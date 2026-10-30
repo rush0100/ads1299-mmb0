@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Docs: GUI page gallery, Mermaid workflows, hardware context
+- `scripts/render_gui_doc_pages.py` — HTML→PNG GUI documentation renders
+- `scripts/capture_gui_screenshots.py` — optional live window capture (Screen Recording)
+
 ## [0.1.0] - 2026-10-30
 
 ### Added

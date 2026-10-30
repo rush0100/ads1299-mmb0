@@ -42,8 +42,8 @@ vendor/
 _extract/
 *.exe
 
-# Local media (may include TI doc captures — keep out of public tree)
+# TI User Guide / schematic crops (copyrighted — keep local only)
 docs/schematic_captures/
-docs/gui_screenshots/
-docs/gui_html/
-scripts/capture_gui_screenshots.py
+
+# Optional live window dumps (doc renders under gui_screenshots/ are committed)
+docs/gui_screenshots/_live/

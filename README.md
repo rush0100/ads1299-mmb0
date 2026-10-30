@@ -88,10 +88,41 @@ If USB bulk wedges after a failed acquire: power-cycle the MMB0 wall wart, wait 
 
 Stock firmware is **buffer-then-USB** (~1 MB ≈ ~28k frames). This package offers **segmented** continuous capture (gaps between blocks are expected). True zero-gap streaming needs custom DSP firmware (out of scope).
 
+## GUI gallery
+
+Evaluation GUI (`ads1299-gui`) — full page walkthrough in **[docs/GUI.md](docs/GUI.md)**.
+
+| About | Analysis · Scope |
+|-------|------------------|
+| ![About](docs/gui_screenshots/01-about.png) | ![Scope](docs/gui_screenshots/07-analysis-scope.png) |
+
+| ADC Registers · Global | Save |
+|------------------------|------|
+| ![Registers](docs/gui_screenshots/02-registers-global.png) | ![Save](docs/gui_screenshots/11-save.png) |
+
+Regenerate doc renders: `python scripts/render_gui_doc_pages.py`
+
+## Workflows
+
+Host control plane and capture sequences (Mermaid): **[docs/WORKFLOWS.md](docs/WORKFLOWS.md)**.
+
+```mermaid
+flowchart LR
+  PC[Python host] -->|load .bin| BOOT[0451:9001]
+  BOOT --> STYX[0451:5718 USBStyx]
+  STYX --> DSP[C5509]
+  DSP -->|SPI| ADC[ADS1299]
+```
+
+Hardware / jumper notes (no TI schematic redistribution): **[docs/HARDWARE.md](docs/HARDWARE.md)**.
+
 ## Documentation
 
 | Doc | Purpose |
 |-----|---------|
+| [docs/GUI.md](docs/GUI.md) | Every GUI page + screenshots |
+| [docs/WORKFLOWS.md](docs/WORKFLOWS.md) | Connect / acquire / preset / save flows |
+| [docs/HARDWARE.md](docs/HARDWARE.md) | Board / USB / jumper context |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | Dev setup & PRs |
 | [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Community norms |
 | [SECURITY.md](SECURITY.md) | Vulnerability reporting |

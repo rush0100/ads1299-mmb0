@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<title>ADS1299EEG-FE — ADC Registers / LOFF & BIAS</title>
+<link rel="stylesheet" href="style.css"/>
+</head><body>
+<div class="window">
+  <div class="titlebar"><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+    ADS1299EEG-FE — Python EVM (SLAU443B parity)</div>
+  <div class="top">
+    <div class="brand">ADS1299EEG-FE</div>
+    <div class="sub">MMB0 / USBStyx</div>
+    <span class="badge">doc render · mirrors live ads1299-gui</span>
+    <div class="spacer"></div>
+    <span class="btn">Show/Poll Lead-Off</span>
+    <span class="btn">Read Registers</span>
+    <span class="btn">Disconnect</span>
+    <span class="btn">Connect</span>
+  </div>
+  <div class="progress"><span></span></div>
+  <div class="tabs"><span class="">About</span><span class="on">ADC Registers</span><span class="">Analysis</span><span class="">Save</span><span class="">MMB0</span></div>
+  <div class="content">
+        <div class="subtabs"><span>Global</span><span>Channels</span><span class="on">LOFF &amp; BIAS</span><span>GPIO / Other</span><span>Register Map</span></div>
+        <div class="row">LOFFSENS P <span class="field">0x00</span> <span class="btn">Set</span></div>
+        <div class="row">LOFFSENS N <span class="field">0x00</span> <span class="btn">Set</span></div>
+        <div class="row">LOFFFLIP <span class="field">0x00</span> <span class="btn">Set</span></div>
+        <div class="row">LOFFSTAT P <span class="field">0x00</span> <span class="btn">Set</span></div>
+        <div class="row">LOFFSTAT N <span class="field">0x00</span> <span class="btn">Set</span></div>
+        <div class="row">BIASSENS P <span class="field">0x00</span> <span class="btn">Set</span></div>
+        <div class="row">BIASSENS N <span class="field">0x00</span> <span class="btn">Set</span></div>
+        <div class="row" style="margin-top:12px"><span class="btn">Show/Poll Lead-Off Status…</span></div>
+        <div class="note">Lead-Off dialog polls <code>loffstatp/n</code> every 500 ms (green = connected).</div>
+        </div>
+  <div class="status">Disconnected — USB idle</div>
+</div>
+</body></html>

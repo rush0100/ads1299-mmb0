@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<title>ADS1299EEG-FE — Analysis / FFT</title>
+<link rel="stylesheet" href="style.css"/>
+</head><body>
+<div class="window">
+  <div class="titlebar"><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+    ADS1299EEG-FE — Python EVM (SLAU443B parity)</div>
+  <div class="top">
+    <div class="brand">ADS1299EEG-FE</div>
+    <div class="sub">MMB0 / USBStyx</div>
+    <span class="badge">doc render · mirrors live ads1299-gui</span>
+    <div class="spacer"></div>
+    <span class="btn">Show/Poll Lead-Off</span>
+    <span class="btn">Read Registers</span>
+    <span class="btn">Disconnect</span>
+    <span class="btn">Connect</span>
+  </div>
+  <div class="progress"><span></span></div>
+  <div class="tabs"><span class="">About</span><span class="">ADC Registers</span><span class="on">Analysis</span><span class="">Save</span><span class="">MMB0</span></div>
+  <div class="content">
+        <div class="grid cols-2">
+          <div>
+            <h2>Capture / Presets</h2>
+            <div class="btn" style="display:block;margin:3px 0">Acquire</div>
+            <div class="btn" style="display:block;margin:3px 0">Input short noise</div>
+            <div class="btn" style="display:block;margin:3px 0">Internal test signal</div>
+            <p class="small">Same left rail as Scope tab.</p>
+          </div>
+          <div>
+            <div class="subtabs"><span>Scope</span><span class="on">FFT</span><span>Histogram</span><span>Analysis</span></div>
+            <div class="row">Window <span class="field">hann</span> ☑ dBFS Harm <span class="field">5</span>
+              DC/F/H leak <span class="field">1</span><span class="field">1</span><span class="field">1</span>
+              CMRR Vin <span class="field">1.0</span> <span class="btn">Apply FFT</span></div>
+            <p class="small">FFT metrics: SNR / THD / ENOB / f0 / CMRR per enabled channel</p>
+            <img class="plot" src="../gui_screenshots/plot-fft-demo.png" alt="fft" style="height:320px"/>
+          </div>
+        </div>
+        </div>
+  <div class="status">Disconnected — USB idle</div>
+</div>
+</body></html>
